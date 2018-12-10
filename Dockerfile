@@ -12,6 +12,8 @@ RUN apt-get install -y build-essential
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
 RUN apt-get install -y nodejs
+# Create the maven directory
+RUN mkdir .m2
 # Set the working directory to /app
 WORKDIR /app
 # Copy the current directory contents into the container
